@@ -3,10 +3,10 @@ const controller = require('./controller.js');
 
 
 router
-  .route('/')
+  .route('/guitars')
     .get(controller.getAll)
 router
-  .route('/:_id')
+  .route('/guitars/:_id')
     .get()
     .post()
 
