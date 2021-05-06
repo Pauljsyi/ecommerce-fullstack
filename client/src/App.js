@@ -1,4 +1,3 @@
-import './App.css';
 import React from 'react'
 import Products from './components/Products'
 import Navbar from './components/Navbar'
@@ -10,7 +9,7 @@ function App() {
   return (
     <div>
       <h1>Hello World</h1>
-      <Navbar />
+      <Navbar  />
       <Products />
       <Carousel />      
 

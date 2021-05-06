@@ -38,6 +38,10 @@ module.exports = {
           presets: ['@babel/preset-env', '@babel/preset-react'],
         },
       },
+      {
+        test: /\.css$/i,
+        loader: 'style-loader', 'css-loader'
+      }
     ],
   },
   // helps webpack find the module code that needs to be included
