@@ -5,14 +5,18 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div className="logo" style={{color: "red"}}>Paradigm Guitar</div>
-        <ul className="cart">
+        <h1 className="logo">Paradigm Guitar</h1>
+        <div className="cart">
+        <i className="fas fa-shopping-cart"></i>
+        <ul className="cart-content"> 
           <li>
-            <h5>My Cart</h5>
+            <h3 className ="my-cart">My Cart</h3>
+            
           </li>          
           <li>Order Details</li>
           <li>Order Total</li>
         </ul>
+        </div>
         
       </nav>
     </div>
