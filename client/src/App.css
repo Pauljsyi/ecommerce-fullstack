@@ -60,24 +60,14 @@ nav .cart-content {
 }
 
 
-@media all and (max-width: 768px) {
-  nav {
-    width: 100%
-  }
-}
 
-@media all and (max-width: 1080px) {
-  nav {
-    width: 90%
-  }
-}
 
 
 /* Carousel Styles */
 
 .carousel {
   border: 2px solid white;
-  width:  60%;
+  width:  1080px;
   height: 30vh;
   box-sizing: border-box;
   position: relative;
@@ -85,7 +75,7 @@ nav .cart-content {
   align-items: center;
   margin: auto;
   padding: 0;
-  align-items: center;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -117,4 +107,25 @@ nav .cart-content {
   width: 10%;
   height: 30vh;
   background: none;
+}
+
+
+@media all and (max-width: 768px) {
+  nav {
+    width: 100%
+  }
+
+  .carousel {
+    width: 100%
+  }
+}
+
+@media all and (max-width: 1080px) {
+  nav {
+    width: 100%
+  }
+
+  .carousel {
+    width: 100%
+  }
 }

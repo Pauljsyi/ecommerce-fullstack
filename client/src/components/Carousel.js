@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
+import Images from './Images';
+import custom from '../featured/test.jpeg'
+
 
 
 const Carousel = () => {
 
   // create an array of assets to display inside carousel
-  let carouselArr = [1,2,3,4,5];
+  
   const [x, setX] = useState(0);
+  let carouselArr = [<Images src={custom}/>,2,3,4,5];
   const goLeft = () => {
     x === 0 ? setX(-100 * (carouselArr.length - 1)) : setX(x + 100)
   };
