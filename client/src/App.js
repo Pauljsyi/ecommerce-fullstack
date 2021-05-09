@@ -8,11 +8,10 @@ function App() {
 
   
   return (
-    <div>
+    <div className="container">
       <Navbar  />
-      {/* <Products /> */}
       <Carousel /> 
-
+      <Products />
     </div>
   )
 };
