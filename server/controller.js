@@ -3,13 +3,14 @@ const helpers = require('../server/db/dbhelpers.js');
 const controller = {
   getAll: (req, res) => {
     //get all request 
+    console.log('controller: line 6')
     helpers.getAll(req.params)
       .then((result) => {
-        console.log('get all results: ', result)
+        console.log('controller: got results')
         res.send(result);
       })
       .catch((error) => {
-        console.log("rejected: ", error)
+        console.log("controller: rejected: ", error)
         res.send(error)
       })
   },

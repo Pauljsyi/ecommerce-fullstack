@@ -7,12 +7,12 @@ const GuitarList = () => {
   const getAllGuitars =  () => {
     console.log('request was sent')
 
-   axios.get('/guitars')
+   axios.get('http://127.0.0.1:5000/guitars')
    .then(response => {
         console.log('this is ur response', response)
       })
       .catch(error => {
-        console.log('this is ur error py1', error)
+        console.log('this is ur error', error)
       })
   }
 
