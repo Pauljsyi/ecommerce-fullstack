@@ -191,14 +191,10 @@ nav .cart-content {
 }
  
 .card-container {
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
-  width: 300px;
-  overflow: hidden;
-  float: left;
-  margin: 50px;
-  position: relative;
-  left: 300px
+  /* border: 2px solid #e7e7e7;
+  border-radius: 4px; */
+  padding: 50px 50px;
+
 }
 
 
@@ -221,12 +217,14 @@ nav .cart-content {
 
 .image-container img{
   overflow: none;
-  height: 200px
+  height: 200px;
+  width: 300px;
 }
 
 .card-content {
   margin: 1rem;
   margin-top: 1rem;
+
 }
 
  h3 {
@@ -250,8 +248,40 @@ nav .cart-content {
   transition: 0.2s;
 }
 
+
+
+/* Product Container */
+
+.product-container {
+  display: flex;
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  margin: auto;
+  width: 60%;
+  justify-content:space-evenly;
+
+}
+
+
+
+
+@media screen and (max-width: 1366px) {
+  .product-container {
+    width: 80%;
+    display: flex;
+    padding: 0;
+  }
+
+  .image-container img{
+    display: block;
+    overflow: none;
+    height: 200px;
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .card-container {
+  .product-container {
     width: 100%;
     display: block;
     margin-bottom: 20px;

@@ -3,10 +3,20 @@ import Card from './Card'
 import luthier from '../featured/luthier.jpg'
 import test from '../featured/test.jpeg'
 import custom from '../featured/custom.jpg'
+import axios from 'axios'
 
 const Products = () => {
+
+  // axios.get('/guitars')
+  //   .then(function (response) {
+  //     console.log(response);
+  //   })
+  //   .catch(function(error) {
+  //     console.log("THIS IS UR ERROR",error)
+  //   })
+
   return (
-    <div>
+    <div className="product-container">
       <Card 
         title='Card Title'
         imageUrl={luthier}
