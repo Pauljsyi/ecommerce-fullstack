@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
-import Products from './Products'
-import Card from './Card'
+import GuitarItem from './GuitarItem'
 
 const GuitarList = () => {
   const [guitars, getGuitars] = useState([])
@@ -12,6 +11,7 @@ const GuitarList = () => {
   useEffect(() => {
     axios.get(url)
       .then(response => {
+        console.log('response', response)
         getGuitars(response.data)
         console.log('guitars', guitars[0])
       })
@@ -47,10 +47,9 @@ const GuitarList = () => {
   return (
     <div className="product-container">
     {
-      guitars && guitars.length > 0 ? (guitars.map((guitar, index) => <Products item={guitar} key={index}/>)) : null
+      guitars && guitars.length > 0 ? (guitars.map((guitar, index) => 
+      <GuitarItem item={guitar} key={index}/>)) : null
     }
-      
-      
     </div>
   )
 }

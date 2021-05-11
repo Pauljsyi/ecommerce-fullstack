@@ -46,47 +46,5 @@
     "name": "carousel-vintage",
     "price": 0,
     "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/featured/vintage.jpg"
-  },
-  {
-    "id": 9,
-    "name": "card-burl",
-    "price": 2000,
-    "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/products/burl1.jpg"
-  },
-  {
-    "id": 10,
-    "name": "card-cream",
-    "price": 3000,
-    "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/products/cream.jpg"
-  },
-  {
-    "id": 11,
-    "name": "card-es355",
-    "price": 2500,
-    "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/products/es-335.jpg"
-  },
-  {
-    "id": 12,
-    "name": "card-goldtop",
-    "price": 4000,
-    "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/products/goldtop.jpg"
-  },
-  {
-    "id": 13,
-    "name": "card-redwood",
-    "price": 3000,
-    "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/products/redwood.jpg"
-  },
-  {
-    "id": 14,
-    "name": "card-tele",
-    "price": 2000,
-    "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/products/tele.jpg"
-  },
-  {
-    "id": 15,
-    "name": "card-lespaul",
-    "price": 3500,
-    "img": "https://paradigm-guitar.s3-us-west-2.amazonaws.com/products/wornlespaul.jpg"
   }
 ]

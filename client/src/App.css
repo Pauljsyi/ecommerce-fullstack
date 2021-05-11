@@ -7,6 +7,11 @@
   
 }
 
+/* .container {
+  width: 80%;
+  margin: auto
+} */
+
 
  
 li {
@@ -254,11 +259,10 @@ nav .cart-content {
 
 .product-container {
   display: flex;
-  border: 2px solid #e7e7e7;
-  border-radius: 4px;
+
   margin: auto;
-  width: 60%;
-  justify-content:space-evenly;
+
+
 
 }
 

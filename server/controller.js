@@ -3,7 +3,7 @@ const helpers = require('../server/db/dbhelpers.js');
 const controller = {
   getAll: (req, res) => {
     //get all request 
-    console.log('controller: line 6')
+
     helpers.getAll(req.params)
       .then((result) => {
         console.log('controller: got results')

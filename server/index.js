@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 5000;
+const port = process.env.port || 5000;
 const router = require('./router.js');
 const connect = require('./db/index.js');
 const bodyParser = require('body-parser');
