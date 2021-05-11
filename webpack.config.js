@@ -39,16 +39,12 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/i,
-        loader: 'style-loader',
-      },
-      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
           'url-loader?limit=10000',
           'img-loader'
         ]
-      }
+      },
     ],
   },
   // helps webpack find the module code that needs to be included
