@@ -6,6 +6,7 @@ const GuitarItem = (props) => {
   console.log('item from Products', props)
 
 
+
    return (
     <div className="product-container">
       <Card 

@@ -11,9 +11,14 @@ const GuitarList = () => {
   useEffect(() => {
     axios.get(url)
       .then(response => {
-        console.log('response', response)
-        getGuitars(response.data)
-        console.log('guitars', guitars[0])
+        console.log('response', response.data.length)
+        // attempt to display only relevant guitars from database
+        for (let i = 0; i < 7; i++){
+          const guitarsdata = response.data[i];
+        getGuitars(guitarsdata);
+        // console.log('guitars', guitars[0])
+      }
+      getGuitars(response.data);
       })
       .catch(error => {
         console.log(error)
