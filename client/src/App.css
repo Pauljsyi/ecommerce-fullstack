@@ -187,11 +187,14 @@ nav .cart-content {
 /* Card Styles */
 
 main {
+  /* margin: 0 auto; */
+  max-width: 700px;
+  gap: 20px;
   display: grid;
-  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  /* grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(225px, 5fr));
   grid-gap: 5px;
   padding: 10px;
-  
 }
 
 .container-cards{
@@ -242,7 +245,7 @@ main {
   margin-left: auto;
   padding: 5px 20px;
   border-radius: 20px;
-  /* background-color:rgb(87, 87, 87); */
+  background-color:rgb(87, 87, 87);
 }
 
  .card-container:hover {

@@ -13,11 +13,11 @@ const GuitarList = () => {
       .then(response => {
         console.log('response', response.data.length)
         // attempt to display only relevant guitars from database
-        for (let i = 0; i < 7; i++){
-          const guitarsdata = response.data[i];
-        getGuitars(guitarsdata);
-        // console.log('guitars', guitars[0])
-      }
+      //   for (let i = 0; i < 7; i++){
+      //     const guitarsdata = response.data[i];
+      //   getGuitars(guitarsdata);
+      //   // console.log('guitars', guitars[0])
+      // }
       getGuitars(response.data);
       })
       .catch(error => {
