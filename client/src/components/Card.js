@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Card = ({title, imageUrl, body}) => {
-
+const Card = ({title, imageUrl, body}, props) => {
+  const {onAdd} = props
   console.log("price", body)
 
   return (
@@ -23,8 +23,8 @@ const Card = ({title, imageUrl, body}) => {
               </div>
 
               <div className="btn">
-                <button >
-                  <a className="add-to-cart">
+                <button onClick={onAdd}>
+                  <a className="add-to-cart" onAdd={onAdd}>
                     add to cart
                   </a>
                 </button>
