@@ -1,8 +1,19 @@
 import React from 'react'
+// import { useState } from 'react';
 
 const Card = ({title, imageUrl, body}, props) => {
-  const {onAdd} = props
-  console.log("price", body)
+  const {product, onAdd} = props
+  // console.log("onAdd in Card.js", props)
+  // const onAdd = (product) => {
+  //   const exist = cartItems.find(x => x.id === product.id);
+  //   if (exist) {
+  //       setCartItems(cartItems.map((x) => x.id === product.id ? { ...exist, qty: exist.qty +1} : x
+  //       )
+  //     );
+  //   } else {
+  //     setCartItems([...cartItems, {...products, qty: 1}]);
+  //   }
+  // }
 
   return (
     <main>
@@ -23,10 +34,8 @@ const Card = ({title, imageUrl, body}, props) => {
               </div>
 
               <div className="btn">
-                <button onClick={onAdd}>
-                  <a className="add-to-cart" onAdd={onAdd}>
-                    add to cart
-                  </a>
+                <button onClick={product}>
+                  add to cart
                 </button>
               </div> 
             </div>

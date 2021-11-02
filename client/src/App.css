@@ -22,7 +22,7 @@ a {
 
 
 /* Navbar Styles */
-nav a {
+nav {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -35,14 +35,40 @@ nav a {
   margin: auto;
 } 
 
+nav a {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
+  min-height: 8vh;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* width: 1080px; */
+  margin: auto;
+}
+
 nav .logo {
   font-size: 22px;
   font-weight: 700; 
 }
 
-nav .cart {
+ /* .cart {
   position: relative;
-  display: inline-block;
+  display: flex;
+} */
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+  margin-left: 200px;
+  margin-right: 20px;
+  min-height: 8vh;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* width: 1080px; */
+  /* margin: auto; */
 }
 
 nav .cart-content {
@@ -57,8 +83,17 @@ nav .cart-content {
 
 .cart:hover .cart-content {
   display: block;
+  cursor: pointer;
+  
 }
 
+/* Cart Styles */
+
+.cart-container {
+  /* background-color: white; */
+  position: absolute;
+  margin-left: 50px;
+}
 
 
 
@@ -216,11 +251,11 @@ main {
   background-color: #39393b;
 }
 
- .card-container:hover {
+ /* .card-container:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 15px 0px;
   transition: .5s;
-}
+} */
 
 .card-content {
   margin: 1rem;
