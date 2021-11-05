@@ -6,6 +6,7 @@ import Cart from './components/Cart';
 import Card from './components/Card';
 import ProductDetails from './components/ProductDetails';
 import { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom"
 
 
 
@@ -44,14 +45,22 @@ function App() {
   }
 
   return (
-    <div className="container">   
-      {/* <Cart /> */}
-      <Navbar onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
-      {/* <Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/> */}
-      <Carousel /> 
-      <GuitarList onAdd={onAdd} />
-      
-    </div>
+    <Router>
+      <div className="container">   
+        {/* <Cart /> */}
+        <Navbar onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
+        {/* <Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/> */}
+        <Carousel /> 
+        <div className="shop-title center">
+          <h1>SHOP</h1>
+        </div>
+        <GuitarList onAdd={onAdd} />
+        
+        <Switch>
+          <Route exact path="product/:id"/>
+        </Switch>
+      </div>
+    </Router>
   )
 };
 

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import GuitarItem from './GuitarItem'
+import ProductDetails from './ProductDetails'
 
 const GuitarList = (props) => {
   const {onAdd} = props
@@ -22,7 +23,7 @@ const GuitarList = (props) => {
   }, [])
 
 
-
+// console.log(guitars)
 
   
   
@@ -32,6 +33,10 @@ const GuitarList = (props) => {
       guitars && guitars.length > 0 ? (guitars.map((guitar, index) => 
       <GuitarItem item={guitar} key={index} onAdd={onAdd}/>)) : null
     }
+    {/* {
+      guitars && guitars.length > 0 ? (guitars.map((guitar, index) => 
+      <ProductDetails item={guitar} key={index} onAdd={onAdd}/>)) : null
+    } */}
     </div>
   )
 }

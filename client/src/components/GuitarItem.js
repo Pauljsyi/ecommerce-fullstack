@@ -14,7 +14,7 @@ const GuitarItem = (props) => {
       <main>
       {item.price != 0 ? 
         <div className="container">
-            <div className="container-cards">
+            <div className="container-cards" onClick={() => onAdd(item)}>
               <div className="card-container">
                 <div className="image-container">
                   <img src={item && item.id > 8 ? item.img : null} alt='Card Image' />

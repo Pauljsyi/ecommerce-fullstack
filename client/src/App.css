@@ -102,7 +102,7 @@ nav .cart-content {
 
 .carousel {
   width:  1080px;
-  height: 100%;
+  /* height: 100%; */
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -112,13 +112,13 @@ nav .cart-content {
   text-align: center;
   overflow: hidden;
   margin-bottom: 0px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .carousel-item {
 
   min-width: 100%;
-  height: 400px;
+  height: 350px;
   transition: .5s;
 }
 
@@ -173,6 +173,12 @@ nav .cart-content {
 
 
 /* Card Styles */
+
+.shop-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 main {
   display: grid;
