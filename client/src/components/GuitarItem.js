@@ -17,7 +17,7 @@ const GuitarItem = (props) => {
       {item.price != 0 ? 
         <Link to={`/product/${item.id}`}>
           <div className="container">
-            <div className="container-cards" onClick={() => onAdd(item)}>
+            <div className="container-cards">
               <div className="card-container">
                 <div className="image-container">
                   <img src={item && item.id > 8 ? item.img : null} alt='Card Image' />
