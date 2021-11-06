@@ -1,6 +1,7 @@
 import React from 'react'
 // import Card from './Card'
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 
 const GuitarItem = (props) => {
@@ -9,11 +10,13 @@ const GuitarItem = (props) => {
   // console.log("item", item)
 
 
+
    return (
     <div className="guitar-container">
       <main>
       {item.price != 0 ? 
-        <div className="container">
+        <Link to={`/product/${item.id}`}>
+          <div className="container">
             <div className="container-cards" onClick={() => onAdd(item)}>
               <div className="card-container">
                 <div className="image-container">
@@ -34,8 +37,10 @@ const GuitarItem = (props) => {
                 </div> 
               </div>
             </div>
-          </div>
+          </div> 
+        </Link>
       : null}
+       
       </main>
       {/* <Card 
         title={item && item.id > 8 ? item.name : null}

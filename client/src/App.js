@@ -51,13 +51,13 @@ function App() {
         <Navbar onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/>
         {/* <Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}/> */}
         <Carousel /> 
-        <div className="shop-title center">
+        <div className="shop-title" id="shop">
           <h1>SHOP</h1>
         </div>
         <GuitarList onAdd={onAdd} />
         
         <Switch>
-          <Route exact path="product/:id"/>
+          <Route path="product/:id" component={ProductDetails} />
         </Switch>
       </div>
     </Router>
